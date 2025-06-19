@@ -1,0 +1,17 @@
+01. Variable must be start with letter or underscore
+    rahim     --- right
+    karim     --- right
+    _rahim    --- right
+    123emon   --- wrong
+    emon123   --- right
+    @rabbi    --- wrong
+
+02. Variable name must cotain letter, digit or underscore
+
+
+03. C Programming keywords can't be used as variables.
+    int
+    for
+    float
+    char
+    bool etc.

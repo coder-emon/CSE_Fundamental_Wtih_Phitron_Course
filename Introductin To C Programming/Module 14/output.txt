@@ -1,0 +1,2 @@
+Number is odd
+Num is OddThis N isn't odd

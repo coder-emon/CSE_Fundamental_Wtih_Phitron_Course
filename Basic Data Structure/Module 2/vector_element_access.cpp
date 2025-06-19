@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector <int> v = {1, 3, 5, 7 ,9};
+    
+    cout << v[5] << endl;
+
+    // cout << v[v.size()-1] << endl;
+    cout << v.back() << endl;
+
+    // cout << v[0] << endl;
+    cout << v.front() << endl;
+    return 0;
+}

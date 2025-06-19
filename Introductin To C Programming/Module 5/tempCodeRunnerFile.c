@@ -1,0 +1,2 @@
+
+    printf("Difference = %lld", diff);

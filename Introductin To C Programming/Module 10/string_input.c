@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    char s[10];
+    scanf("%s", &s);
+    printf("%s\n", s);
+    printf("%c\n", s[5]);
+    printf("%c", s[7]);
+return 0;
+}
