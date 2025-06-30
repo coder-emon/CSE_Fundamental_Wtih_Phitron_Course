@@ -1,0 +1,46 @@
+✅ 1️⃣ Why does a linked list require more memory than an array for the same number of elements?
+Because each node in a linked list must store:
+
+The data itself (same as an array).
+
+A pointer (or reference) to the next node.
+
+So each node has extra memory overhead for the link.
+
+✅ For example:
+
+Array of 100 integers (assuming 4 bytes each): ~400 bytes.
+
+Singly linked list of 100 integers: ~400 bytes for data + 100 × pointer size (typically 4 or 8 bytes each) ⇒ ~800–1200 bytes.
+
+👉 Reason:
+
+Extra space is needed to store links (pointers) in addition to data.
+
+✅ 2️⃣ Three limitations of arrays solved by linked lists
+✅ Limitation 1: Fixed Size
+
+Array: Size is fixed when created.
+
+Linked List: Can grow or shrink dynamically by adding/removing nodes at runtime.
+
+✅ Limitation 2: Costly Insertions/Deletions
+
+Array: Inserting/deleting in the middle requires shifting elements.
+
+Linked List: Can insert or delete nodes easily by changing pointers, with no shifting.
+
+✅ Limitation 3: Wasted or Insufficient Memory
+
+Array: You might allocate too much (wasting space) or too little (can't expand).
+
+Linked List: Uses only as much memory as needed for current elements; no need to predefine maximum size.
+
+📌 Short Answer Example for Exams
+Three limitations of arrays solved by linked lists:
+
+Arrays have fixed size; linked lists are dynamic in size.
+
+Arrays require costly shifting for insertions/deletions; linked lists allow easy node insertion/deletion.
+
+Arrays may waste memory or run out of space; linked lists allocate memory only as needed.
