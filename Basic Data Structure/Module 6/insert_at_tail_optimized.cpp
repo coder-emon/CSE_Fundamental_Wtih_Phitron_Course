@@ -9,20 +9,17 @@ class Node{
         this->next = NULL;
     }
 };
-void insert_at_tail(Node* &head, int val){
+void insert_at_tail(Node* &head, Node* &tail, int val){
     Node* newNode = new Node(val);
 
-    
     if(head == NULL){
         head = newNode;
+        tail = newNode;
         return;
     }
 
-    Node* temp = head;
-    while(temp->next != NULL){
-        temp = temp->next;
-    }
-    temp->next = newNode;
+    tail->next = newNode;
+    tail = newNode;
     
 }
 
@@ -37,18 +34,18 @@ int main()
 {
     Node* head = new Node(10);
     Node* a = new Node(20);
-    Node* b = new Node(30);
+    Node* tail = new Node(30);
 
     head->next = a;
-    a->next = b;
+    a->next = tail;
 
-    insert_at_tail(head, 40);
-    insert_at_tail(head, 50);
-    insert_at_tail(head, 60);
+    insert_at_tail(head, tail, 40);
+    insert_at_tail(head, tail, 50);
+    insert_at_tail(head, tail, 60);
     
 
     print_linkedList(head);
-
-
+    cout << "Tail: " << tail->val <<endl;
+ 
     return 0;
 }

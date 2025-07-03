@@ -9,10 +9,14 @@ class Node{
         this->next = NULL;
     }
 };
-void insert_at_head(Node* &head, int val){
+void insert_at_any_pos(Node* &head,int idx, int val){
     Node* newNode = new Node(val);
-    newNode->next = head;
-    head = newNode;
+    Node* temp = head;
+    for(int i = 1; i < idx; i++){
+        temp = temp->next;
+    }
+    newNode->next = temp->next;
+    temp->next = newNode;
 }
 
 void print_linkedList(Node* head){
@@ -27,14 +31,16 @@ int main()
     Node* head = new Node(10);
     Node* a = new Node(20);
     Node* b = new Node(30);
+    Node* c = new Node(40);
 
     head->next = a;
     a->next = b;
+    b->next = c;
 
-    insert_at_head(head, 100);
-    insert_at_head(head, 200);
-    insert_at_head(head, 300);
-    insert_at_head(head, 400);
+    insert_at_any_pos(head,2, 70);
+    insert_at_any_pos(head,2, 80);
+    insert_at_any_pos(head,2, 90);
+    
 
     print_linkedList(head);
 

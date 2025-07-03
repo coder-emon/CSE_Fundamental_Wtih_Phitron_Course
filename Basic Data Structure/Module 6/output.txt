@@ -1,6 +1,15 @@
+Size Of Linked List with global variable: 11
+Size Of Linked List with func: 11
+Head: 90
+90
+100
 10
+400
+500
+300
 20
 30
 40
-50
-60
+70
+80
+Tail: 80
