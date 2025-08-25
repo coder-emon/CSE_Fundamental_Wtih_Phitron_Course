@@ -1,5 +1,1 @@
-Alice
-Bob
 2
-Bob
-Bob Charlie 
