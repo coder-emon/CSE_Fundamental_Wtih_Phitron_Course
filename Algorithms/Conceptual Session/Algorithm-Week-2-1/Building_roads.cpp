@@ -2,8 +2,8 @@
 using namespace std;
 
 
-vector<int> adj_list[105];
-bool vis[105];
+vector<int> adj_list[100005];
+bool vis[100005];
 
 void dfs(int src){
     vis[src] = true;
