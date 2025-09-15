@@ -33,6 +33,7 @@ int main()
     dsu_union(1,2);
     dsu_union(2,3);
     dsu_union(3,4);
+    
     for(int i = 0;i < 6; i++){
         cout << i << " -> " << parent[i] << endl;
     }
