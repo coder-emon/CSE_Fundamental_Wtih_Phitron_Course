@@ -1,0 +1,1 @@
+{"name":"Local: String_Vanisher","url":"c:\\Phitron\\Phitron CP Track MOCK Contest\\String_Vanisher.cpp","tests":[{"id":1758733488143,"input":"4\n1\na\n3\nabc\n4\nabcd\n5\nabddd","output":"1\n2\n3\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Phitron\\Phitron CP Track MOCK Contest\\String_Vanisher.cpp","group":"local","local":true}
